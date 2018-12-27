@@ -29,7 +29,7 @@ else {
 }
 
 var words = [
-	{text: "UI", weight: 14},
+	{text: "UI", weight: 15},
 	{text: "UX", weight: 10.5},
 	{text: "Design", weight: 11},
 	{text: "Coding", weight: 8},
@@ -48,7 +48,7 @@ var words = [
 	{text: "Media Planning", weight: 7},
 	{text: "Sketch", weight: 9.4},
 	{text: "HTML5", weight: 10},
-	{text: "CSS", weight: 8},
+	{text: "CSS", weight: 14},
 	{text: "Python", weight: 6.8},
 	{text: "PHP", weight: 7},
 	{text: "Wordpress", weight: 6},
@@ -63,7 +63,13 @@ var words = [
 	{text: "Media Campaigning", weight: 7.7},
 	{text: "DCO", weight: 10},
 	{text: "Data Visualization", weight: 9.5},
-	{text: "Final Cut Pro", weight: 8}
+	{text: "Final Cut Pro", weight: 8},
+	{text: "Git", weight: 11},
+	{text: "Illustration", weight: 8.7},
+	{text: "Branding", weight: 9.2},
+	{text: "Filming", weight: 7.2},
+	{text: "Editing", weight: 8.2},
+	{text: "Interactive Prototyping", weight: 7.9}
 
 	/* ... */
 ];
