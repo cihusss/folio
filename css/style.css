@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Butterfly+Kids|Noto+Serif+TC&effect=neon');
+@import url('https://fonts.googleapis.com/css?family=Butterfly+Kids|Indie+Flower|Major+Mono+Display|Noto+Serif+TC&effect=neon');
 
 body { background: #222; font-family: 'Noto Serif TC', cursive; }
 
-.folio {display: flex;flex-direction:row; flex-flow: wrap; margin: -80px auto 0 auto; max-width: 1080px;}
+.folio { display: flex;flex-direction:row; flex-flow: wrap; margin: -80px auto 0 auto; max-width: 1080px;}
 .folio-col { display: flex; flex: 1; flex-direction: column; }
 .folio-panel { display: flex; flex-direction: column; overflow: hidden; margin: 30px; background-color: #333; color: white; border-radius: .6em .6em 0 .6em; font-size: 2em; cursor: pointer; transition: all .3s; }
-.folio-panel:hover { background-color: #111; transform:rotate(0deg) !important; }
+.folio-panel:hover { background-color: #5f3569; transform:rotate(0deg) !important; }
 .folio-panel:hover img { filter: grayscale(0);  }
-.folio-panel p {padding: 0 20px;font-size: 0.8em;margin: 20px 0 5px;}
+.folio-panel p  {padding: 0 20px; font-size: 2rem; margin: 20px 0 5px; font-family: 'Indie Flower', cursive; }
 .folio-panel img { width: 100%; filter: grayscale(1); transition: filter .3s; }
-.folio-panel span {padding: 0 20px 20px 20px;font-size: 0.5em;}
+.folio-panel span { padding: 0 20px 20px 20px;font-size: 0.5em; }
 
 @media (max-width: 680px) {
 
@@ -19,7 +19,33 @@ body { background: #222; font-family: 'Noto Serif TC', cursive; }
 
 .me {width: 160px;margin: 100px 0 0px 0;transition: transform .3s ease-out;}
 .me:hover { transform:rotate(360deg); }
-.bb h1 { font-family: 'Butterfly Kids', cursive; font-size: 12em; margin: .3em 0 .3em 0; color: white; }
-.bb h2 { font-family: 'Butterfly Kids', cursive; font-size: 2em;margin: 20px 0 160px 0;color: white; }
+.bb h1 { font-family: 'Butterfly Kids', cursive; font-size: 12rem; margin: .3em 0 .3em 0; color: white; }
+/*.bb h2 {font-family: 'Indie Flower', cursive;font-size: 2rem;text-align: center;margin: 1.8rem 0 10rem 0;color: #e2e2e2; }*/
 
-#jqcloud { margin: 0 auto; color: #fff; font-family: 'Noto Serif TC', cursive; }
+.bb h2 {
+  color: #e2e2e2;
+  font-family: 'Indie Flower', cursive;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15rem solid #e2e2e2; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 2rem auto 10rem auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3s steps(20, end),
+    blink-caret .5s step-end infinite;
+  vertical-align: middle;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #e2e2e2 }
+}
+
+#jqcloud { margin: 0 auto; color: #fff; font-family: 'Indie Flower', cursive; }

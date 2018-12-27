@@ -15,4 +15,10 @@ body { margin: 0; padding: 0; display: flex; justify-content: center; }
 .col-3-5 { width: 60%; }
 .col-4-5 { width: 80%; }
 
-.bb { display: flex; flex-direction: column; align-items: center; width: 100%; background: #111; }
+.bb {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	background: #111;
+}
