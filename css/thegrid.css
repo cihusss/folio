@@ -1,0 +1,18 @@
+* { box-sizing: border-box; }
+
+body { margin: 0; padding: 0; display: flex; justify-content: center; }
+
+.thegrid { overflow: hidden; width: 100%; }
+
+.row, .col-flex { display: flex; }
+
+.col-1-1, .col-2-2, .col-3-3, .col-4-4, .col-5-5 { width: 100%; }
+.col-1-2 { width: 50%; }
+.col-1-3 { width: 33.33%; }
+.col-2-3 { width: 66.7%; }
+.col-1-5 { width: 20%; }
+.col-2-5 { width: 40%; }
+.col-3-5 { width: 60%; }
+.col-4-5 { width: 80%; }
+
+.bb { display: flex; flex-direction: column; align-items: center; width: 100%; background: #111; }
