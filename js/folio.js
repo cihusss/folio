@@ -2,7 +2,7 @@ var rand;
 
 (function rotateIt() {
 
-	document.querySelectorAll('div.folio-panel').forEach(function(node) {
+	document.querySelectorAll("div.folio-panel").forEach(function(node) {
 		rand = Math.floor(Math.random() * 11) - 5;
 
 		if (rand !== 0) {
@@ -81,7 +81,7 @@ var words = [
 	/* ... */
 ];
 
-$('#jqcloud').jQCloud(words, {
+$("#jqcloud").jQCloud(words, {
 	width: jqWidth,
 	height: 400
 });
@@ -99,4 +99,67 @@ function showMore(event) {
 
 document.getElementById("btn-more").addEventListener("click", showMore);
 
+/* modal */
 
+function closeModal(even) {
+	document.getElementById("modal").style.display = "none";
+	document.getElementsByClassName("thegrid")[0].style.display = "block";
+}
+
+function popModal(event) {
+	console.log("click");
+	document.getElementById("modal").style.display = "block";
+	document.getElementsByClassName("thegrid")[0].style.display = "none";
+}
+
+function popContent(id, data) {
+	console.log(id);
+	console.log(data);
+
+	var client = data.data[id].client;
+	var property = data.data[id].property;
+	var objective = data.data[id].objective;
+
+	document.getElementById("client").innerHTML = client;
+	document.getElementById("property").innerHTML = property;
+	document.getElementById("objective").innerHTML = objective;
+}
+
+var elements = document.getElementsByClassName("folio-panel");
+
+for (let i = 0; i < elements.length; i++) {
+	elements[i].addEventListener("click", function() {
+		// console.log(i);
+		popModal();
+		getData(i);
+	});
+}
+
+
+document.getElementById("close").addEventListener("click", closeModal);
+
+/* parse data */
+
+// get and parse json data
+function getData(id) {
+
+  var url = "json/content.json";
+  var request = new XMLHttpRequest();
+  request.open('GET', url, true);
+
+  request.onload = function() {
+    if (request.status >= 200 && request.status < 400) {
+      // success!
+      data = JSON.parse(request.responseText);
+      popContent(id, data);
+    } else {
+      // error msg from server
+    }
+  }
+
+  request.onerror = function() {
+    // there was a connection error of some sort
+  }
+
+  request.send();
+}

@@ -1,0 +1,18 @@
+{
+	"data":
+		[
+	    	{
+				"id": 1,
+				"client": "Epson",
+				"property": "Walmart",
+				"objective": "Drive awareness"
+	    	},
+	    	{
+				"id": 2,
+				"client": "Coke",
+				"property": "Staples",
+				"objective": "New product launch"
+	    	}
+
+		]
+}
