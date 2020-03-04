@@ -2,7 +2,7 @@
 
 body { margin: 0; padding: 0; display: flex; justify-content: center; }
 
-.thegrid { overflow: hidden; width: 100%; }
+.thegrid {overflow: hidden;width: 100%;background: #252233;}
 
 .row, .col-flex { display: flex; }
 
@@ -21,4 +21,9 @@ body { margin: 0; padding: 0; display: flex; justify-content: center; }
 	align-items: center;
 	width: 100%;
 	background: #111;
+	background-image: url("../img/bg-sky.jpg");
+	background-size: cover;
+	background-position: center center;
+	/*filter: grayscale(.8);*/
+	margin: 0 0 -7rem 0;
 }

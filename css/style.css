@@ -2,13 +2,13 @@
 
 body { background: #222; font-family: 'Noto Serif TC', cursive; }
 
-.folio { display: flex;flex-direction:row; flex-flow: wrap; margin: -80px auto 0 auto; max-width: 1080px;}
+.folio {display: flex;flex-direction:row;flex-flow: wrap;margin: 0 auto 0 auto;max-width: 1080px;/* background: #4b6651; */}
 .folio-col { display: flex; flex: 1; flex-direction: column; }
-.folio-panel { display: flex; flex-direction: column; overflow: hidden; margin: 30px; background-color: #333; color: white; border-radius: .6em .6em 0 .6em; font-size: 2em; cursor: pointer; transition: all .3s; }
-.folio-panel:hover { background-color: #5f3569; transform:rotate(0deg) !important; }
-.folio-panel:hover img { filter: grayscale(0);  }
+.folio-panel {display: flex;flex-direction: column;overflow: hidden;margin: 2.2rem;background-color: #3b3652;color: white;border-radius: .6em .6em 0 .6em;font-size: 2em;cursor: pointer;transition: all .5s;}
+.folio-panel:hover { transform:rotate(0deg) !important;}
+.folio-panel:hover img { filter: grayscale(0) contrast(1); }
 .folio-panel p  {padding: 0 20px; font-size: 2rem; margin: 20px 0 5px; font-family: 'Indie Flower', cursive; }
-.folio-panel img { width: 100%; filter: grayscale(1); transition: filter .3s; }
+.folio-panel img { width: 100%; filter: grayscale(1) contrast(1.1); transition: filter .3s; }
 .folio-panel span { padding: 0 20px 20px 20px;font-size: 0.5em; }
 
 @media (max-width: 680px) {
@@ -17,13 +17,13 @@ body { background: #222; font-family: 'Noto Serif TC', cursive; }
 	.folio-col:last-of-type { order: 0; color: blue; }
 }
 
-.me {width: 160px;margin: 100px 0 0px 0;transition: transform .3s ease-out;}
+.me {width: 160px;margin: 100px 0 0px 0;transition: transform .3s ease-out; }
 .me:hover { transform:rotate(360deg); }
 .bb h1 { font-family: 'Butterfly Kids', cursive; font-size: 12rem; margin: .3em 0 .3em 0; color: white; }
 /*.bb h2 {font-family: 'Indie Flower', cursive;font-size: 2rem;text-align: center;margin: 1.8rem 0 10rem 0;color: #e2e2e2; }*/
 
 .bb h2 {
-  color: #e2e2e2;
+  color: #ffffff;
   font-family: 'Indie Flower', cursive;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15rem solid #e2e2e2; /* The typwriter cursor */
@@ -48,4 +48,18 @@ body { background: #222; font-family: 'Noto Serif TC', cursive; }
   50% { border-color: #e2e2e2 }
 }
 
-#jqcloud { margin: 0 auto; color: #fff; font-family: 'Indie Flower', cursive; }
+#jqcloud {margin: 3rem auto;color: #fff;font-family: 'Indie Flower', cursive;}
+
+.lazyload,
+.lazyloading {
+	opacity: 0;
+}
+.lazyloaded {
+	opacity: 1;
+	/*transition: opacity 5s;*/
+}
+
+.hidden { display: none; }
+
+#btn-more, #btn-less {margin: 3rem auto;color: white;font-family: 'Indie Flower', cursive;display: inline-block;align-items: center;justify-content: center;font-size: 1.6rem;cursor: pointer;border: 1px solid white;padding: .6rem 1.8rem;}
+#btn-less { display: none; }

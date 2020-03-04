@@ -29,7 +29,7 @@ else {
 }
 
 var words = [
-	{text: "UI", weight: 20},
+	{text: "UI", weight: 19},
 	{text: "UX", weight: 15},
 	{text: "Design", weight: 16},
 	{text: "Coding", weight: 12},
@@ -44,11 +44,11 @@ var words = [
 	{text: "Production", weight: 11},
 	{text: "Resource Management", weight: 12},
 	{text: "Marketing", weight: 13},
-	{text: "Advertising", weight: 11},
+	{text: "Advertising", weight: 13.5},
 	{text: "Media Planning", weight: 11},
 	{text: "Sketch", weight: 14},
 	{text: "HTML5", weight: 15},
-	{text: "CSS", weight: 17},
+	{text: "CSS", weight: 16},
 	{text: "Python", weight: 12.5},
 	{text: "PHP", weight: 11.5},
 	{text: "Wordpress", weight: 11},
@@ -86,3 +86,17 @@ $('#jqcloud').jQCloud(words, {
 	height: 400
 });
 console.log(words);
+
+function showMore(event) {
+	console.log("click");
+	var x = document.querySelectorAll(".hidden");
+	var i;
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "flex";
+	}
+	document.getElementById("btn-more").style.display = "none";
+}
+
+document.getElementById("btn-more").addEventListener("click", showMore);
+
+
