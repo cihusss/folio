@@ -87,6 +87,8 @@ $("#jqcloud").jQCloud(words, {
 });
 console.log(words);
 
+/* show more */
+
 function showMore(event) {
 	console.log("click");
 	var x = document.querySelectorAll(".hidden");
@@ -101,40 +103,49 @@ document.getElementById("btn-more").addEventListener("click", showMore);
 
 /* modal */
 
-function closeModal(even) {
-	document.getElementById("modal").style.display = "none";
-	document.getElementsByClassName("thegrid")[0].style.display = "block";
+function closeModal(event) {
+	document.getElementById("modal").style.top = "100%";
+	// document.getElementsByClassName("thegrid")[0].style.display = "block";
+	document.getElementById("body").style.overflowY = "scroll";
 }
 
 function popModal(event) {
 	console.log("click");
-	document.getElementById("modal").style.display = "block";
-	document.getElementsByClassName("thegrid")[0].style.display = "none";
+	document.getElementById("modal").style.top = "0%";
+	// document.getElementsByClassName("thegrid")[0].style.display = "none";
+	document.getElementById("body").style.overflowY = "hidden";
 }
 
 function popContent(id, data) {
 	console.log(id);
 	console.log(data);
 
-	var client = data.data[id].client;
-	var property = data.data[id].property;
-	var objective = data.data[id].objective;
+	try {
+		var client = data.data[id].client;
+		var property = data.data[id].property;
+		var objective = data.data[id].objective;
 
-	document.getElementById("client").innerHTML = client;
-	document.getElementById("property").innerHTML = property;
-	document.getElementById("objective").innerHTML = objective;
+		document.getElementById("client").innerHTML = client;
+		document.getElementById("property").innerHTML = property;
+		document.getElementById("objective").innerHTML = objective;
+
+		popModal();
+	}
+	catch {
+		alert("no data match");
+	}
 }
+
+/* trigger modal/data on panel click */
 
 var elements = document.getElementsByClassName("folio-panel");
 
 for (let i = 0; i < elements.length; i++) {
 	elements[i].addEventListener("click", function() {
 		// console.log(i);
-		popModal();
 		getData(i);
 	});
 }
-
 
 document.getElementById("close").addEventListener("click", closeModal);
 
@@ -143,22 +154,22 @@ document.getElementById("close").addEventListener("click", closeModal);
 // get and parse json data
 function getData(id) {
 
-  var url = "json/content.json";
-  var request = new XMLHttpRequest();
-  request.open('GET', url, true);
+	var url = "json/content.json";
+	var request = new XMLHttpRequest();
+	request.open('GET', url, true);
 
-  request.onload = function() {
-    if (request.status >= 200 && request.status < 400) {
-      // success!
-      data = JSON.parse(request.responseText);
-      popContent(id, data);
-    } else {
-      // error msg from server
-    }
-  }
+	request.onload = function() {
+		if (request.status >= 200 && request.status < 400) {
+			// success!
+			data = JSON.parse(request.responseText);
+			popContent(id, data);
+		} else {
+			// error msg from server
+		}
+	}
 
-  request.onerror = function() {
-    // there was a connection error of some sort
+	request.onerror = function() {
+		// there was a connection error of some sort
   }
 
   request.send();
