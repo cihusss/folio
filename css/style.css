@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Butterfly+Kids|Indie+Flower|Major+Mono+Display|Noto+Serif+TC&effect=neon');
 
-body { background: #222; font-family: 'Noto Serif TC', cursive; }
+body {background: #222;font-family: 'Noto Serif TC', cursive;}
+h3 {margin: 1em 0 .2em 0;display: inline;font-family: 'Indie Flower', cursive;font-size: 1.4em;}
 
 .folio {display: flex;flex-direction:row;flex-flow: wrap;margin: 0 auto 0 auto;max-width: 1080px;/* background: #4b6651; */}
 .folio-col { display: flex; flex: 1; flex-direction: column; }
@@ -17,7 +18,7 @@ body { background: #222; font-family: 'Noto Serif TC', cursive; }
 	.folio-col:last-of-type { order: 0; color: blue; }
 }
 
-.me {width: 160px;margin: 100px 0 0px 0;transition: transform .3s ease-out; }
+.me {width: 160px;margin: 100px 0 10px 0;transition: transform .3s ease-out;}
 .me:hover { transform:rotate(360deg); }
 .bb h1 { font-family: 'Butterfly Kids', cursive; font-size: 12rem; margin: .3em 0 .3em 0; color: white; }
 /*.bb h2 {font-family: 'Indie Flower', cursive;font-size: 2rem;text-align: center;margin: 1.8rem 0 10rem 0;color: #e2e2e2; }*/
@@ -64,7 +65,14 @@ body { background: #222; font-family: 'Noto Serif TC', cursive; }
 #btn-more, #btn-less {margin: 3rem auto;color: white;font-family: 'Indie Flower', cursive;display: inline-block;align-items: center;justify-content: center;font-size: 1.6rem;cursor: pointer;border: 1px solid white;padding: .6rem 1.8rem;}
 #btn-less { display: none; }
 
-#modal { opacity: 1; width: 100%; height: 100%; position: fixed; background: white; top: 100%; transition: all .3s ease-in-out; }
-#close { cursor: pointer; position: absolute; top: 10px; right: 10px; }
-#close i { font-size: 48px; color: #333; }
+#modal {opacity: 1;width: 100%;height: 100%;position: fixed;background: white;top: 100%;transition: all .3s ease-in-out;overflow: scroll;display: flex;flex-direction: column;align-items: center;}
+#close {cursor: pointer;position: absolute;top: 10px;right: 10px;}
+#close i {font-size: 48px;color: #333;}
 .material-icons:hover { transition: color .3s; color: #3399dd !important; }
+#img {width: 80%;border: 1px solid #e2e2e2;}
+#content {
+    justify-content: flex-start;
+    width: 80%;
+    margin: 60px 0;
+}
+#content span {font-size: 1em;}
