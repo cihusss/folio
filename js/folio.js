@@ -124,10 +124,14 @@ function popContent(id, data) {
 		var client = data.data[id].client;
 		var property = data.data[id].property;
 		var objective = data.data[id].objective;
+		var product = data.data[id].product;
+		var img = data.data[id].img;
 
 		document.getElementById("client").innerHTML = client;
 		document.getElementById("property").innerHTML = property;
 		document.getElementById("objective").innerHTML = objective;
+		document.getElementById("product").innerHTML = product;
+		document.getElementById("img").src = img;
 
 		popModal();
 	}

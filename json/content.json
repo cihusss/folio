@@ -4,14 +4,18 @@
 	    	{
 				"id": 1,
 				"client": "Epson",
-				"property": "Walmart",
-				"objective": "Drive awareness"
+				"property": "Staples",
+				"objective": "Brand awareness, commerce",
+				"product": "Landing page",
+				"img": "img/folio/epson-view.jpg"
 	    	},
 	    	{
 				"id": 2,
 				"client": "Coke",
 				"property": "Staples",
-				"objective": "New product launch"
+				"objective": "New product launch",
+				"product": "Landing page",
+				"img": "img/folio/epson-view.jpg"
 	    	}
 
 		]
