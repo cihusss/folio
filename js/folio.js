@@ -110,6 +110,7 @@ function closeModal(event) {
 }
 
 function popModal(event) {
+	
 	console.log("click");
 	document.getElementById("modal").style.top = "0%";
 	// document.getElementsByClassName("thegrid")[0].style.display = "none";
@@ -120,23 +121,51 @@ function popContent(id, data) {
 	console.log(id);
 	console.log(data);
 
+	// remove images
+	images = document.querySelectorAll(".img");
+	console.log(images);
+	for (let i = 0; i < images.length; i++) {
+		images[i].parentNode.removeChild(images[i]);
+		console.log("removed!");
+	}
+
 	try {
 		var client = data.data[id].client;
 		var property = data.data[id].property;
 		var objective = data.data[id].objective;
 		var product = data.data[id].product;
+		var skills = data.data[id].skills;
+		var overview = data.data[id].overview;
+		var link = data.data[id].link;
 		var img = data.data[id].img;
 
 		document.getElementById("client").innerHTML = client;
 		document.getElementById("property").innerHTML = property;
 		document.getElementById("objective").innerHTML = objective;
 		document.getElementById("product").innerHTML = product;
-		document.getElementById("img").src = img;
+		document.getElementById("skills").innerHTML = skills;
+		document.getElementById("overview").innerHTML = overview;
+		document.getElementById("link").href = link;
+
+		for (let i = 0; i < img.length; i++) {
+			console.log("b00");
+			var element = document.createElement("img");
+			element.src = img[i];
+			element.setAttribute("class", "img");
+			document.getElementById("modal").appendChild(element);
+		}
 
 		popModal();
 	}
 	catch {
 		alert("no data match");
+	}
+
+	if (link == "") {
+		document.getElementById("link").innerHTML = "";
+	}
+	else {
+		document.getElementById("link").innerHTML = "Details";
 	}
 }
 

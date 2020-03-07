@@ -4,18 +4,35 @@
 	    	{
 				"id": 1,
 				"client": "Epson",
-				"property": "Staples",
+				"property": "Staples.com",
 				"objective": "Brand awareness, commerce",
-				"product": "Landing page",
-				"img": "img/folio/epson-view.jpg"
+				"product": "Landing page mock",
+				"skills": "Design, UX/UI, art direction",
+				"overview": "Stick to native staples.com look/feel",
+				"link": "",
+				"img": ["img/folio/epson-view.jpg"]
 	    	},
 	    	{
 				"id": 2,
-				"client": "Coke",
-				"property": "Staples",
-				"objective": "New product launch",
-				"product": "Landing page",
-				"img": "img/folio/epson-view.jpg"
+				"client": "Walmart Media Group",
+				"property": "AXT",
+				"objective": "Brand awareness",
+				"product": "Flexible, animated HTML5 media placement",
+				"skills": "Design, art direction, front-end development, ad-tech",
+				"overview": "One flex ad fits all containers",
+				"link": "https://cihusss.github.io/wmg-ads/set01/iframe.html",
+				"img": ["img/folio/wmg-view.jpg"]
+	    	},
+	    	{
+				"id": 3,
+				"client": "Google",
+				"property": "AXT",
+				"objective": "Commerce",
+				"product": "HTML5 dynamic media placement",
+				"skills": "UX/UI, art direction, front-end development, ad-tech",
+				"overview": "Visualize dynamic creative optimization decision tree and produce dynamic HTML5 media placements",
+				"link": "",
+				"img": ["img/folio/google01-view.png", "img/folio/google02-view.png"]
 	    	}
 
 		]
