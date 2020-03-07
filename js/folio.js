@@ -154,7 +154,6 @@ function popContent(id, data) {
 			element.setAttribute("class", "img");
 			document.getElementById("modal").appendChild(element);
 		}
-
 		popModal();
 	}
 	catch {
