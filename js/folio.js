@@ -164,7 +164,7 @@ function popContent(id, data) {
 		document.getElementById("link").innerHTML = "";
 	}
 	else {
-		document.getElementById("link").innerHTML = "Details";
+		document.getElementById("link").innerHTML = "Preview";
 	}
 }
 
