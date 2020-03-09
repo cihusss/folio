@@ -3,58 +3,80 @@
 		[
 	    	{
 				"id": 1,
-				"client": "Epson",
-				"property": "Staples.com",
-				"objective": "Brand awareness, commerce",
-				"product": "Landing page",
-				"skills": "UX/UI, Art Direction, HTML5/CSS/JavaScript",
-				"overview": "Conceptualize, design and develop a landing page that fits into staples.com look/feel while preserving Epson's brand integrity",
+				"client": "Gerber",
+				"property": "Audience extension",
+				"objective": "Drive in-store foot traffic, commerce",
+				"deliverable": "Dynamic HTML5 media",
+				"skills": "Media Strategy, Ad-Tech, Art Direction, UX/UI, HTML5/CSS/JavaScript, Bonsai",
+				"overview": "Conceptualize, design and develop time-of-day, retailer audience agnostic dynamic HTML5 media where one code-base delivers data-driven placements for a variety of IAB sizes.",
 				"link": "",
-				"img": ["img/folio/epson-view.jpg"]
+				"img": ["img/folio/gerber-view-tree.png", "img/folio/gerber-view-wm.jpg", "img/folio/gerber-view-wm.jpg", "img/folio/gerber-view-cvs.jpg", "img/folio/gerber-view-kroger.jpg"]
 	    	},
 	    	{
 				"id": 2,
 				"client": "Walmart Media Group",
 				"property": "Audience extension",
 				"objective": "Brand awareness",
-				"product": "Animated / flex HTML5 dynamic media",
-				"skills": "UX/UI, Art Direction, HTML5/CSS/JavaScript, AppNexus",
-				"overview": "Conceptualize, design and develop animated / flex dynamic HTML5 media campaign",
+				"deliverable": "Animated, flex HTML5 media",
+				"skills": "Art Direction, UX/UI, HTML5/CSS/JavaScript, Ad-Tech",
+				"overview": "Conceptualize, design and develop animated, flex HTML5 media where one code-base delivers placements for a variety of IAB sizes.",
 				"link": "https://cihusss.github.io/wmg-ads/set01/iframe.html",
 				"img": ["img/folio/wmg-view01.jpg", "img/folio/wmg-view02.jpg", "img/folio/wmg-view03.jpg", "img/folio/wmg-view04.jpg"]
 	    	},
 	    	{
 				"id": 3,
-				"client": "Gerber",
-				"property": "Audience extension",
-				"objective": "Drive in-store foot traffic and sales",
-				"product": "HTML5 dynamic media",
-				"skills": "UX/UI, Art Direction, HTML5/CSS/JavaScript, Bonsai, AppNexus",
-				"overview": "Conceptualize, design and develop time-of-day / retailer-agnostic dynamic HTML5 media campaign",
+				"client": "Epson",
+				"property": "Staples.com",
+				"objective": "Brand awareness, commerce",
+				"deliverable": "Landing page",
+				"skills": "Art Direction, UX/UI, HTML5/CSS/JavaScript",
+				"overview": "Conceptualize, design and develop a landing page that fits into staples.com look/feel while preserving Epson brand integrity.",
 				"link": "",
-				"img": ["img/folio/gerber-view-wm.jpg", "img/folio/gerber-view-cvs.jpg", "img/folio/gerber-view-kroger.jpg"]
+				"img": ["img/folio/epson-view.jpg"]
 	    	},
 	    	{
 				"id": 4,
-				"client": "FPO",
-				"property": "FPO",
-				"objective": "FPO",
-				"product": "FPO",
-				"skills": "FPO",
-				"overview": "FPO",
-				"link": "",
-				"img": [""]
+				"client": "Adidas",
+				"property": "Kohls.com",
+				"objective": "Brand awareness, commerce",
+				"deliverable": "HTML5 dynamic rich media video ad",
+				"skills": "Strategy, Art Direction, UX/UI, HTML5/CSS/JavaScript, Ad-Tech",
+				"overview": "Conceptualize, design and develop gender-agnostic, flex HTML5 rich media video ad.",
+				"link": "https://cihusss.github.io/kohls-adidas/preview.html",
+				"img": ["img/folio/adidas-view01.jpg", "img/folio/adidas-view02.jpg", "img/folio/adidas-view03.jpg"]
 	    	},
 	    	{
 				"id": 5,
 				"client": "Google",
 				"property": "Audience extension",
 				"objective": "Drive sales",
-				"product": "HTML5 dynamic media",
-				"skills": "UX/UI, art direction, front-end development, ad-tech",
-				"overview": "Conceptualize, visualize dynamic creative optimization decision tree, produce audience relevant and day/time agnostic dynamic HTML5 media campaign",
+				"deliverable": "Dynamic HTML5 media",
+				"skills": "Strategy, Art Direction, UX/UI, HTML5/CSS/JavaScript, Ad-Tech",
+				"overview": "Conceptualize and visualize dynamic creative optimization decision tree, produce audience relevant and day/time agnostic dynamic HTML5 media campaign.",
 				"link": "",
 				"img": ["img/folio/google-view01.png", "img/folio/google-view02.png", "img/folio/google-view03.png", "img/folio/google-view04.png"]
+	    	},
+	    	{
+				"id": 6,
+				"client": "CVS Pharmacy",
+				"property": "iOS/Android app store",
+				"objective": "Drive awarenes, commerce",
+				"deliverable": "Sketch prototype",
+				"skills": "Art Direction, UX/UI",
+				"overview": "Conceptualize and visualize a smartphone application prototype for the CVS Pharmacy \"Cold, Cough & Flue\" initiative.",
+				"link": "",
+				"img": ["img/folio/cvs-view.jpg"]
+	    	},
+	    	{
+				"id": 7,
+				"client": "Microsoft",
+				"property": "Staples.com",
+				"objective": "Branw awarenes, commerce",
+				"deliverable": "Landing page",
+				"skills": "Art Direction, UX/UI, HTML5/CSS/JavaScript",
+				"overview": "Conceptualize, design and develop a landing page that fits into staples.com look/feel while preserving Microsoft brand integrity and acommodating content/products to variety of audiences (personal, B2B,  enterprise etc.).",
+				"link": "",
+				"img": ["img/folio/microsoft-view.jpg"]
 	    	}
 
 		]

@@ -103,18 +103,25 @@ document.getElementById("btn-more").addEventListener("click", showMore);
 
 /* modal */
 
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+
 function closeModal(event) {
 	document.getElementById("modal").style.top = "100%";
 	// document.getElementsByClassName("thegrid")[0].style.display = "block";
 	document.getElementById("body").style.overflowY = "scroll";
+	document.getElementById("close").style.display = "none";
 }
 
 function popModal(event) {
 	
 	console.log("click");
+	window.scrollTo(0,0);
 	document.getElementById("modal").style.top = "0%";
 	// document.getElementsByClassName("thegrid")[0].style.display = "none";
 	document.getElementById("body").style.overflowY = "hidden";
+	document.getElementById("close").style.display = "block";
 }
 
 function popContent(id, data) {
@@ -133,7 +140,7 @@ function popContent(id, data) {
 		var client = data.data[id].client;
 		var property = data.data[id].property;
 		var objective = data.data[id].objective;
-		var product = data.data[id].product;
+		var deliverable = data.data[id].deliverable;
 		var skills = data.data[id].skills;
 		var overview = data.data[id].overview;
 		var link = data.data[id].link;
@@ -142,7 +149,7 @@ function popContent(id, data) {
 		document.getElementById("client").innerHTML = client;
 		document.getElementById("property").innerHTML = property;
 		document.getElementById("objective").innerHTML = objective;
-		document.getElementById("product").innerHTML = product;
+		document.getElementById("deliverable").innerHTML = deliverable;
 		document.getElementById("skills").innerHTML = skills;
 		document.getElementById("overview").innerHTML = overview;
 		document.getElementById("link").href = link;
@@ -154,6 +161,7 @@ function popContent(id, data) {
 			element.setAttribute("class", "img");
 			document.getElementById("modal").appendChild(element);
 		}
+
 		popModal();
 	}
 	catch {
