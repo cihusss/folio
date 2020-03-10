@@ -51,7 +51,7 @@
 				"property": "Audience extension",
 				"objective": "Drive sales",
 				"deliverable": "Dynamic HTML5 media",
-				"skills": "Strategy, Art Direction, UX/UI, HTML5/CSS/JavaScript, Ad-Tech",
+				"skills": "Strategy, UX/UI, HTML5/CSS/JavaScript, Ad-Tech",
 				"overview": "Conceptualize and visualize dynamic creative optimization decision tree, produce audience relevant and day/time agnostic dynamic HTML5 media campaign.",
 				"link": "",
 				"img": ["img/folio/google-view01.png", "img/folio/google-view02.png", "img/folio/google-view03.png", "img/folio/google-view04.png"]
@@ -80,17 +80,6 @@
 	    	},
 	    	{
 				"id": 8,
-				"client": "FPO",
-				"property": "FPO",
-				"objective": "FPO",
-				"deliverable": "",
-				"skills": "FPO",
-				"overview": "FPO",
-				"link": "",
-				"img": [""]
-	    	},
-	    	{
-				"id": 9,
 				"client": "Triad Retail Media / Spectrum",
 				"property": "Spectrum.triadretail.com",
 				"objective": "Brand awareness",
@@ -99,6 +88,17 @@
 				"overview": "Conceptualize, design and develop an interactive prototype serving as a pre-MVP with a purpose of attracting initial investment.",
 				"link": "",
 				"img": ["img/folio/rr-view01.jpg", "img/folio/rr-view02.jpg", "img/folio/rr-view03.jpg", "img/folio/rr-view04.jpg", "img/folio/rr-view05.jpg", "img/folio/rr-view06.jpg"]
+	    	},
+	    	{
+				"id": 9,
+				"client": "Triad Retail Media / Spectrum",
+				"property": "Spectrum.triadretail.com",
+				"objective": "Improve media planning accuracy",
+				"deliverable": "Self served platform",
+				"skills": "Strategy, Product Development, Art Direction, UX/UI, HTML5/CSS/JavaScript, Ad-Tech",
+				"overview": "Conceptualize, develop UI/UX and lead front-end development efforts for a proprietary, algorithm driven self served platform.",
+				"link": "",
+				"img": ["img/folio/planner-view01.jpg", "img/folio/planner-view02.jpg", "img/folio/planner-view03.jpg"]
 	    	},
 	    	{
 				"id": 10,
@@ -124,14 +124,14 @@
 	    	},
 	    	{
 				"id": 12,
-				"client": "FPO",
-				"property": "FPO",
-				"objective": "FPO",
-				"deliverable": "",
-				"skills": "FPO",
-				"overview": "FPO",
-				"link": "",
-				"img": [""]
+				"client": "AppNexus",
+				"property": "Programmatic media",
+				"objective": "Streamline operations",
+				"deliverable": "Dynamic flex-ad HTML5 ad framework",
+				"skills": "HTML/CSS/JavaScript, Bonsai, Ad-Tech",
+				"overview": "Develop a reusable HTML5 data-driven flex ad framework with a goal to streamline operations and test Bonsai driven dynamic creative.",
+				"link": "https://github.com/cihusss/dfaf",
+				"img": ["img/folio/dfaf-view01.jpg", "img/folio/dfaf-view02.jpg", "img/folio/dfaf-view03.jpg"]
 	    	}
 
 		]
