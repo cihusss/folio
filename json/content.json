@@ -2,7 +2,7 @@
 	"data":
 		[
 	    	{
-				"id": 1,
+				"data-id": 1,
 				"client": "Gerber",
 				"property": "Audience extension",
 				"objective": "Drive in-store foot traffic, commerce",
@@ -13,7 +13,7 @@
 				"img": ["img/folio/gerber-view-tree.png", "img/folio/gerber-view-wm.jpg", "img/folio/gerber-view-wm.jpg", "img/folio/gerber-view-cvs.jpg", "img/folio/gerber-view-kroger.jpg"]
 	    	},
 	    	{
-				"id": 2,
+				"data-id": 2,
 				"client": "Walmart Media Group",
 				"property": "Audience extension",
 				"objective": "Brand awareness",
@@ -24,7 +24,7 @@
 				"img": ["img/folio/wmg-view01.jpg", "img/folio/wmg-view02.jpg", "img/folio/wmg-view03.jpg", "img/folio/wmg-view04.jpg"]
 	    	},
 	    	{
-				"id": 3,
+				"data-id": 3,
 				"client": "Epson",
 				"property": "Staples.com",
 				"objective": "Brand awareness, commerce",
@@ -35,7 +35,7 @@
 				"img": ["img/folio/epson-view.jpg"]
 	    	},
 	    	{
-				"id": 4,
+				"data-id": 4,
 				"client": "Adidas",
 				"property": "Kohls.com",
 				"objective": "Brand awareness, commerce",
@@ -46,7 +46,7 @@
 				"img": ["img/folio/adidas-view01.jpg", "img/folio/adidas-view02.jpg", "img/folio/adidas-view03.jpg"]
 	    	},
 	    	{
-				"id": 5,
+				"data-id": 5,
 				"client": "Google",
 				"property": "Audience extension",
 				"objective": "Drive sales",
@@ -57,7 +57,7 @@
 				"img": ["img/folio/google-view01.png", "img/folio/google-view02.png", "img/folio/google-view03.png", "img/folio/google-view04.png"]
 	    	},
 	    	{
-				"id": 6,
+				"data-id": 6,
 				"client": "CVS Pharmacy",
 				"property": "iOS/Android app store",
 				"objective": "Drive awarenes, commerce",
@@ -68,18 +68,18 @@
 				"img": ["img/folio/cvs-view.jpg"]
 	    	},
 	    	{
-				"id": 7,
-				"client": "Microsoft",
-				"property": "Staples.com",
-				"objective": "Brand awarenes, commerce",
-				"deliverable": "Landing page",
-				"skills": "Art Direction, UX/UI, HTML5/CSS/JavaScript",
-				"overview": "Conceptualize, design and develop a landing page that fits into staples.com look/feel while preserving Microsoft brand integrity and acommodating content/products for a variety of audiences (personal, B2B,  enterprise etc.).",
-				"link": "",
-				"img": ["img/folio/microsoft-view.jpg"]
+				"data-id": 7,
+				"client": "Triad Retail Media / AppNexus",
+				"property": "Programmatic media",
+				"objective": "DCO solution + operational efficiency",
+				"deliverable": "Data driven flex-ad HTML5 framework",
+				"skills": "HTML/CSS/JavaScript, Bonsai, Ad-Tech",
+				"overview": "Develop a reusable HTML5 data driven flex ad framework with a goal to streamline operations and test AppNexus bonsai driven dynamic creative capability.",
+				"link": "https://github.com/cihusss/dfaf",
+				"img": ["img/folio/dfaf-view01.jpg", "img/folio/dfaf-view02.jpg", "img/folio/dfaf-view03.jpg"]
 	    	},
 	    	{
-				"id": 8,
+				"data-id": 8,
 				"client": "Triad Retail Media / Spectrum",
 				"property": "Spectrum.triadretail.com",
 				"objective": "Brand awareness",
@@ -90,7 +90,7 @@
 				"img": ["img/folio/rr-view01.jpg", "img/folio/rr-view02.jpg", "img/folio/rr-view03.jpg", "img/folio/rr-view04.jpg", "img/folio/rr-view05.jpg", "img/folio/rr-view06.jpg"]
 	    	},
 	    	{
-				"id": 9,
+				"data-id": 9,
 				"client": "Triad Retail Media / Spectrum",
 				"property": "Spectrum.triadretail.com",
 				"objective": "Improve media planning accuracy",
@@ -101,9 +101,9 @@
 				"img": ["img/folio/planner-view01.jpg", "img/folio/planner-view02.jpg", "img/folio/planner-view03.jpg"]
 	    	},
 	    	{
-				"id": 10,
+				"data-id": 10,
 				"client": "Triad Retail Media",
-				"property": "Internal",
+				"property": "Internal use",
 				"objective": "Visualize ad campaign perfomance",
 				"deliverable": "Data driven dashboard",
 				"skills": "UI/UX",
@@ -112,7 +112,7 @@
 				"img": ["img/folio/aware-view01.jpg", "img/folio/aware-view02.jpg", "img/folio/aware-view03.jpg", "img/folio/aware-view04.jpg"]
 	    	},
 	    	{
-				"id": 11,
+				"data-id": 11,
 				"client": "Nestle Purina",
 				"property": "iOS/Android app store",
 				"objective": "Engagement",
@@ -123,15 +123,26 @@
 				"img": ["img/folio/photo-madness-view01.jpg", "img/folio/photo-madness-view02.jpg", "img/folio/photo-madness-view04.jpg", "img/folio/photo-madness-view05.jpg"]
 	    	},
 	    	{
-				"id": 12,
-				"client": "AppNexus",
-				"property": "Programmatic media",
-				"objective": "Streamline operations",
-				"deliverable": "Dynamic flex-ad HTML5 ad framework",
-				"skills": "HTML/CSS/JavaScript, Bonsai, Ad-Tech",
-				"overview": "Develop a reusable HTML5 data-driven flex ad framework with a goal to streamline operations and test Bonsai driven dynamic creative.",
-				"link": "https://github.com/cihusss/dfaf",
-				"img": ["img/folio/dfaf-view01.jpg", "img/folio/dfaf-view02.jpg", "img/folio/dfaf-view03.jpg"]
+				"data-id": 12,
+				"client": "Microsoft",
+				"property": "Staples.com",
+				"objective": "Brand awarenes, commerce",
+				"deliverable": "Landing page",
+				"skills": "Art Direction, UX/UI, HTML5/CSS/JavaScript",
+				"overview": "Conceptualize, design and develop a landing page that fits into staples.com look/feel while preserving Microsoft brand integrity and acommodating content/products for a variety of audiences (personal, B2B,  enterprise etc.).",
+				"link": "",
+				"img": ["img/folio/microsoft-view.jpg"]
+	    	},
+	    	{
+				"data-id": 13,
+				"client": "Triad Retail Media",
+				"property": "Internal use",
+				"objective": "Awareness",
+				"deliverable": "Animated video",
+				"skills": "Art Direction, Illustration, Animation, Video, Audio",
+				"overview": "Develop an animated video promoting internal platform focused on elevating efficiencies and customer service.",
+				"link": "https://youtu.be/bcD7x3vOR70",
+				"img": ["img/folio/platform-view01.jpg", "img/folio/platform-view02.jpg", "img/folio/platform-view03.jpg", "img/folio/platform-view04.jpg", "img/folio/platform-view05.jpg"]
 	    	}
 
 		]

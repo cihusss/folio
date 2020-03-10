@@ -121,6 +121,7 @@ function popModal(event) {
 }
 
 function popContent(id, data) {
+	id = id - 1;
 	console.log(id);
 	console.log(data);
 
@@ -168,7 +169,7 @@ function popContent(id, data) {
 		document.getElementById("link").innerHTML = "";
 	}
 	else {
-		document.getElementById("link").innerHTML = "Details";
+		document.getElementById("link").innerHTML = "View More";
 	}
 }
 
@@ -177,11 +178,21 @@ function popContent(id, data) {
 var elements = document.getElementsByClassName("folio-panel");
 
 for (let i = 0; i < elements.length; i++) {
+
 	elements[i].addEventListener("click", function() {
 		// console.log(i);
-		getData(i);
+		id = this.getAttribute("data-id");
+		console.log("DATA_ID= " + id);
+		getData(id);
 	});
 }
+
+// for (let i = 0; i < elements.length; i++) {
+// 	elements[i].addEventListener("click", function() {
+// 		// console.log(i);
+// 		getData(i);
+// 	});
+// }
 
 document.getElementById("close").addEventListener("click", closeModal);
 
