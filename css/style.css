@@ -90,8 +90,9 @@ h3 a {text-decoration: none;}
 @media (max-width: 680px) {
     .folio {flex-flow: column;}
     .folio-col:last-of-type { order: 0; color: blue; }
-    .me {margin: 80px 0 0 0 !important;}
-    .bb h2 {font-size: 1.3em;}
+    .me {margin: 80px 0 0 0 !important;width: 140px;}
+    .bb h2 {font-size: 1.3em;margin: 3rem 0 8rem 0;}
     #close {right: 0px !important;top: 0px !important;padding: 5px 5px 0 5px;}
     #close i {font-size: 36px;padding: 4px 4px 8px 4px;}
+    #jqcloud {/* margin: 1em; */}
 }

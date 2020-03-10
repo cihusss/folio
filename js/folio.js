@@ -25,7 +25,7 @@ if (windowWidth > 640) {
   jqWidth = windowWidth - 20;
 }
 else {
-  jqWidth = 320;
+  jqWidth = 300;
 }
 
 var words = [
