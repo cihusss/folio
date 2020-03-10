@@ -71,12 +71,67 @@
 				"id": 7,
 				"client": "Microsoft",
 				"property": "Staples.com",
-				"objective": "Branw awarenes, commerce",
+				"objective": "Brand awarenes, commerce",
 				"deliverable": "Landing page",
 				"skills": "Art Direction, UX/UI, HTML5/CSS/JavaScript",
-				"overview": "Conceptualize, design and develop a landing page that fits into staples.com look/feel while preserving Microsoft brand integrity and acommodating content/products to variety of audiences (personal, B2B,  enterprise etc.).",
+				"overview": "Conceptualize, design and develop a landing page that fits into staples.com look/feel while preserving Microsoft brand integrity and acommodating content/products for a variety of audiences (personal, B2B,  enterprise etc.).",
 				"link": "",
 				"img": ["img/folio/microsoft-view.jpg"]
+	    	},
+	    	{
+				"id": 8,
+				"client": "FPO",
+				"property": "FPO",
+				"objective": "FPO",
+				"deliverable": "",
+				"skills": "FPO",
+				"overview": "FPO",
+				"link": "",
+				"img": [""]
+	    	},
+	    	{
+				"id": 9,
+				"client": "Triad Retail Media / Spectrum",
+				"property": "Spectrum.triadretail.com",
+				"objective": "Brand awareness",
+				"deliverable": "Interactive prototype",
+				"skills": "Product Development, Art Direction, UX/UI, HTML5/CSS/JavaScript, Ad-Tech",
+				"overview": "Conceptualize, design and develop an interactive prototype serving as a pre-MVP with a purpose of attracting initial investment.",
+				"link": "",
+				"img": ["img/folio/rr-view01.jpg", "img/folio/rr-view02.jpg", "img/folio/rr-view03.jpg", "img/folio/rr-view04.jpg", "img/folio/rr-view05.jpg", "img/folio/rr-view06.jpg"]
+	    	},
+	    	{
+				"id": 10,
+				"client": "Triad Retail Media",
+				"property": "Internal",
+				"objective": "Visualize ad campaign perfomance",
+				"deliverable": "Data driven dashboard",
+				"skills": "UI/UX",
+				"overview": "Conceptualize, design and develop a json data driven dashboard in Sketch with a purpose of visualizing ad campaign perfomance.",
+				"link": "https://github.com/cihusss/aware",
+				"img": ["img/folio/aware-view01.jpg", "img/folio/aware-view02.jpg", "img/folio/aware-view03.jpg", "img/folio/aware-view04.jpg"]
+	    	},
+	    	{
+				"id": 11,
+				"client": "Nestle Purina",
+				"property": "iOS/Android app store",
+				"objective": "Engagement",
+				"deliverable": "App look/feel and UI",
+				"skills": "Illustration, UX/UI",
+				"overview": "Conceptualize, Illustrate and design an iOS spot-the-difference game with a goal of supporting engagement Nestle Purina showcase on walmart.com.",
+				"link": "",
+				"img": ["img/folio/photo-madness-view01.jpg", "img/folio/photo-madness-view02.jpg", "img/folio/photo-madness-view04.jpg", "img/folio/photo-madness-view05.jpg"]
+	    	},
+	    	{
+				"id": 12,
+				"client": "FPO",
+				"property": "FPO",
+				"objective": "FPO",
+				"deliverable": "",
+				"skills": "FPO",
+				"overview": "FPO",
+				"link": "",
+				"img": [""]
 	    	}
 
 		]

@@ -103,10 +103,6 @@ document.getElementById("btn-more").addEventListener("click", showMore);
 
 /* modal */
 
-if ('scrollRestoration' in history) {
-    history.scrollRestoration = 'manual';
-}
-
 function closeModal(event) {
 	document.getElementById("modal").style.top = "100%";
 	// document.getElementsByClassName("thegrid")[0].style.display = "block";
@@ -117,7 +113,7 @@ function closeModal(event) {
 function popModal(event) {
 	
 	console.log("click");
-	window.scrollTo(0,0);
+	document.getElementById("modal").scroll(0,0);
 	document.getElementById("modal").style.top = "0%";
 	// document.getElementsByClassName("thegrid")[0].style.display = "none";
 	document.getElementById("body").style.overflowY = "hidden";
@@ -172,7 +168,7 @@ function popContent(id, data) {
 		document.getElementById("link").innerHTML = "";
 	}
 	else {
-		document.getElementById("link").innerHTML = "Preview";
+		document.getElementById("link").innerHTML = "Details";
 	}
 }
 
