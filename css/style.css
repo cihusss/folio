@@ -91,6 +91,7 @@ h3 a {text-decoration: none;}
     .folio {flex-flow: column;}
     .folio-col:last-of-type { order: 0; color: blue; }
     .me {margin: 80px 0 0 0 !important;}
+    .bb h2 {font-size: 1.3em;}
     #close {right: 0px !important;top: 0px !important;padding: 5px 5px 0 5px;}
     #close i {font-size: 36px;padding: 4px 4px 8px 4px;}
 }
