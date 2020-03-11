@@ -6,12 +6,12 @@ h3 {margin: .4em .2em 0 0;display: block;font-family: 'Indie Flower', cursive;fo
 h3 a {text-decoration: none;}
 
 
-.folio {display: flex;flex-direction: row;flex-flow: wrap;margin: 0 auto 0 auto;max-width: 1080px;/* background: #4b6651; */}
-.folio-col { display: flex; flex: 1; flex-direction: column; }
-.folio-panel {display: flex;flex-direction: column;overflow: hidden;margin: 2.2rem;background-color: #3b3652;color: white;border-radius: .6em .6em 0 .6em;font-size: 2em;cursor: pointer;transition: all .5s; }
+.folio {display: flex;flex-direction: row;flex-flow: wrap;margin: 0 auto 0 auto;max-width: 1080px;justify-content: center;align-items: center;}
+.folio-col {display: flex;flex: 1;flex-direction: column;}
+.folio-panel {display: flex;flex-direction: column;overflow: hidden;margin: 2rem 2.2rem;background-color: #3b3652;color: white;border-radius: .6em .6em 0 .6em;font-size: 2em;cursor: pointer;transition: all .5s;width: 25%;}
 .folio-panel:hover { transform:rotate(0deg) !important;}
 .folio-panel:hover img { filter: grayscale(0) contrast(1); }
-.folio-panel p  {padding: 0 20px;font-size: 2rem;margin: 20px 0 5px;font-family: 'Indie Flower', cursive;line-height: 1.2em;}
+.folio-panel p  {padding: 0 20px;font-size: 1.9rem;margin: 20px 0 5px;font-family: 'Indie Flower', cursive;line-height: 1.2em;}
 .folio-panel img { width: 100%; filter: grayscale(1) contrast(1.1); transition: filter .3s; }
 .folio-panel span { padding: 0 20px 20px 20px;font-size: 0.5em; }
 
@@ -89,6 +89,7 @@ h3 a {text-decoration: none;}
 
 @media (max-width: 680px) {
     .folio {flex-flow: column;}
+    .folio-panel { width: 80%; }
     .folio-col:last-of-type { order: 0; color: blue; }
     .me {margin: 80px 0 0 0 !important;width: 140px;}
     .bb h2 {font-size: 1.3em;margin: 3rem 0 8rem 0;}
