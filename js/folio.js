@@ -76,9 +76,6 @@ var words = [
 	{text: "Google Ad Manager", weight: 12},
 	{text: "Javascript", weight: 14},
 	{text: "jQuery", weight: 13}
-
-
-	/* ... */
 ];
 
 $("#jqcloud").jQCloud(words, {
@@ -87,7 +84,7 @@ $("#jqcloud").jQCloud(words, {
 });
 console.log(words);
 
-/* show more */
+// show more
 
 function showMore(event) {
 	console.log("click");
@@ -101,11 +98,10 @@ function showMore(event) {
 
 document.getElementById("btn-more").addEventListener("click", showMore);
 
-/* modal */
+// modal
 
 function closeModal(event) {
 	document.getElementById("modal").style.top = "100%";
-	// document.getElementsByClassName("thegrid")[0].style.display = "block";
 	document.getElementById("body").style.overflowY = "scroll";
 	document.getElementById("close").style.display = "none";
 }
@@ -115,7 +111,6 @@ function popModal(event) {
 	console.log("click");
 	document.getElementById("modal").scroll(0,0);
 	document.getElementById("modal").style.top = "0%";
-	// document.getElementsByClassName("thegrid")[0].style.display = "none";
 	document.getElementById("body").style.overflowY = "hidden";
 	document.getElementById("close").style.display = "block";
 }
@@ -173,7 +168,7 @@ function popContent(id, data) {
 	}
 }
 
-/* trigger modal/data on panel click */
+// trigger modal/data on panel click
 
 var elements = document.getElementsByClassName("folio-panel");
 
@@ -187,16 +182,9 @@ for (let i = 0; i < elements.length; i++) {
 	});
 }
 
-// for (let i = 0; i < elements.length; i++) {
-// 	elements[i].addEventListener("click", function() {
-// 		// console.log(i);
-// 		getData(i);
-// 	});
-// }
-
 document.getElementById("close").addEventListener("click", closeModal);
 
-/* parse data */
+// parse data
 
 // get and parse json data
 function getData(id) {
